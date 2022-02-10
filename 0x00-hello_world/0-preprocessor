@@ -1,2 +1,2 @@
 #!/bin/bash
-wcwecw	c
+gcc -c -save-temps $CFILE
