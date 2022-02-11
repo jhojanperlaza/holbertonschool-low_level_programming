@@ -11,7 +11,7 @@ int main(void)
 	char letra = 'a';
 
 	do {
-	printf("%c/n", letra);
+	printf("%c", letra);
 	letra++;
 	x--;
 	} while (x != 0);
