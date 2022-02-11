@@ -11,7 +11,8 @@ int main(void)
 	char letra = 'a';
 
 	do {
-	printf("%c", letra);
+	putchar(letra);
+	putchar('\n');
 	letra++;
 	x--;
 	} while (x != 0);
