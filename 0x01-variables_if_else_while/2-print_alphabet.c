@@ -15,6 +15,7 @@ int main(void)
 	letra++;
 	x--;
 	} while (x != 0);
+	putchar('\n');
 
 	return (0);
 }
