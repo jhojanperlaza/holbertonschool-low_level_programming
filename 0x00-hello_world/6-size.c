@@ -7,14 +7,16 @@
  */
 int main(void)
 {
-	int intType;
-	float floatType;
-	double doubleType;
-	char charType;
+	char typechar;
+	int typeint;
+	long int typelongint;
+	long long int typelonglong;
+	float typelong;
 
-	printf("Size of int: %zu bytes\n", sizeof(intType));
-	printf("Size of float: %zu bytes\n", sizeof(floatType));
-	printf("Size of double: %zu bytes\n", sizeof(doubleType));
-	printf("Size of char: %zu byte\n", sizeof(charType));
+	printf("Size of a char: %zu bytes\n", sizeof(typechar));
+	printf("Size of an int: %zu bytes\n", sizeof(typeint));
+	printf("Size of a long int: %zu bytes\n", sizeof(typelongint));
+	printf("Size of a long long int: %zu byte\n", sizeof(typelonglong));
+	printf("Size of a float: %zu byte\n", sizeof(typelong));
 	return (0);
 }
