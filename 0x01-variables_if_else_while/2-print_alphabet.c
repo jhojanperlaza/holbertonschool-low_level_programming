@@ -12,7 +12,6 @@ int main(void)
 
 	do {
 	putchar(letra);
-	putchar('\n');
 	letra++;
 	x--;
 	} while (x != 0);
