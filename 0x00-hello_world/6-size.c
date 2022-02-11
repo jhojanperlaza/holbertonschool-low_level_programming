@@ -9,7 +9,7 @@ int main(void)
 {
 	char typechar;
 	int typeint;
-	long int typelongint;
+	long  typelongint;
 	long long int typelonglong;
 	float typelong;
 
