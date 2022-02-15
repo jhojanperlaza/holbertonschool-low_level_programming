@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-* main - Entry point
+* main - Entry poinet
 * Return: Always 0 (Success)
 */
 
