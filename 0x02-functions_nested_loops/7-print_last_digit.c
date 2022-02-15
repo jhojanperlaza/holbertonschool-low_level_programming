@@ -3,9 +3,9 @@
 #include <ctype.h>
 #include "main.h"
 /**
-* print_last_digit - is a fuction to prints last digit of a number.
+*print_last_digit - is a fuction to prints last digit of a number.
 *@n: letter being tested
-*@digit: letter being tested
+*digit: letter being tested
 * Return: Always 0 (Success)
 */
 int print_last_digit(int n)
