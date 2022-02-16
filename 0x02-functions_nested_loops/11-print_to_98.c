@@ -3,7 +3,7 @@
 #include <ctype.h>
 #include "main.h"
 /**
- * add - Adds two integers.
+ * print_to_98 - Adds two integers.
  * @n: The variable.
  *
  * Return: The result of the addition.
@@ -19,5 +19,5 @@ void print_to_98(int n)
 	else
 		for (n = n; n > 98; n--)
 			printf("%d, ", n);
-	printf("98\n");	
+	printf("98\n");
 }
