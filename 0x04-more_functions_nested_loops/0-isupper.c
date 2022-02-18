@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* _isupper - is a fuction to prints the lower character.
+* _isupper - is a one fuction to prints the lower character.
 *@c: letter being tested
 * Return: Always 0 (Success)
 */
