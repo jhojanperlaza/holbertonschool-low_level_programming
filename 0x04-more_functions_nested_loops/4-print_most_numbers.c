@@ -1,0 +1,20 @@
+#include "main.h"
+/**
+ * print_most_numbers - Adds two integers.
+ * n: The first integer to be added.
+ *
+ * Return: The result of the addition.
+ */
+void print_most_numbers(void)
+
+{
+	int n;
+
+	for (n = 0; n <= 9; n++)
+	{
+		if (n != 2 && n != 4)
+
+			_putchar(n + '0');
+	}
+	_putchar('\n');
+}
