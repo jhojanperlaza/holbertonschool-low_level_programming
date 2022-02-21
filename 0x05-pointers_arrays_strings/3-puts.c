@@ -1,4 +1,5 @@
 #include "main.h"
+#include <unistd.h>
 /**
  * _puts - this function reset n for the value 98
  * @str: a char value
