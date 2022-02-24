@@ -20,7 +20,7 @@ void rev_string(char *s)
 	i = i - 1; /** le resto uno para no coger el valor de \0 */
 	for (j = 0; j < i; j++)
 	{
-		x = s[j]; /** guardo en ls variable x el valor de la deferenciacion s[j] */
+		x = s[j]; /** guardo en la variable x el valor de la deferenciacion s[j] */
 		s[j] = s[i]; /**swap */
 		s[i] = x;
 		i--;
