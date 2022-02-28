@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 /**
 * _strspn - Entry point
 *@s: is a the pointer of in.
