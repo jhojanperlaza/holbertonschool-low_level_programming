@@ -9,7 +9,7 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	int i = 0;
-	int k = 1;
+	unsigned int k = 1;
 
 	while (s[i] != '\0' && accept[i] != '\0')
 	{
