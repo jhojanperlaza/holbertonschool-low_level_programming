@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <stddef.h>
 /**
 * *_strchr - Entry point
 *@s: is a the pointer of in.
@@ -17,3 +17,4 @@ char *_strchr(char *s, char c)
 		i++;
 	}
 	return (NULL);
+}
