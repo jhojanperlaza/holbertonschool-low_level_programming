@@ -1,15 +1,17 @@
 #include "main.h"
 /**
 * _puts_recursion - mi first program with recursion
-*@s: is a pointer that contain one char 
+*@s:is a pointer that contain one char
 * Return: the answer
 */
 void _puts_recursion(char *s)
 {
-	if (*s)
+	if (*s == '\0')
 	{
+		_putchar('\n');
 		return;
 	}
+
 	_putchar(*s);
-	_puts_recursion(s+1);
+	_puts_recursion(s + 1);
 }
