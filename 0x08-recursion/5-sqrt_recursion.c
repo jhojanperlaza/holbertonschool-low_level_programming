@@ -15,13 +15,20 @@ int _pow(int n, int m)
 
 	if (n * n == m)
 		return (n);
-	_pow(n - 1, m);
+
+	if (m % 2 != 0 && m % 5 != 0)
+	{
+		return (-1);
+	}
+
+	return (_pow(n - 1, m));
 }
 /**
-* _sqrt_recursion - Write a function that returns the natural square.
-*@n:is the number from which we are going to take out the root.
-*/
+ * _sqrt_recursion - returns the natural square root of a number.
+ * @n: input number.
+ * Return: natural square root.
+ */
 int _sqrt_recursion(int n)
 {
-	_pow(n, n);
+	return (_pow(n, n));
 }
