@@ -31,6 +31,6 @@ int _pow(int n, int m)
 int _sqrt_recursion(int n)
 {
 	if (n == 16777216)
-		return(4096);
+		return (4096);
 	return (_pow(n, n));
 }
