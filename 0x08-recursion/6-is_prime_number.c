@@ -22,7 +22,7 @@ int _pow2(int n, int m)
 */
 int is_prime_number(int n)
 {
-	if (n == 0 || n == 1 || n == 4)
+	if (n < 2 || n == 4)
 		return (0);
 
 	return (_pow2(n, 2));
