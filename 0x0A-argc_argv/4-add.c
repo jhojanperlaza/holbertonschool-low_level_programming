@@ -38,5 +38,5 @@ int main(int argc, char *argv[])
 		if (!x)
 			printf("%d\n", sum);
 	}
-	return (0);
+	return (1);
 }
