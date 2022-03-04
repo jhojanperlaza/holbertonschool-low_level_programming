@@ -19,8 +19,6 @@ int main(int argc, char *argv[])
 	{
 		printf("0\n");
 	}
-	if (argc > 1)
-	{
 		for (n = 1; n < argc; n++)
 		{
 			if (atoi(argv[n]) <= 0)
@@ -38,6 +36,5 @@ int main(int argc, char *argv[])
 		}
 		if (!x)
 			printf("%d\n", sum);
-	}
 	return (0);
 }
