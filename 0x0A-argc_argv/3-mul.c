@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 		m = atoi(argv[2]);
 		printf("%d\n", n * m);
 	}
-	else if (argc == 1)
+	else if (argc == 1 || argc >= 3)
 	{
 		printf("Error\n");
 		return (1);
