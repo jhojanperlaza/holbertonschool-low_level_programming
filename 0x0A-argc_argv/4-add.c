@@ -32,6 +32,7 @@ int main(int argc, char *argv[])
 			{
 				printf("Error\n");
 				x = true;
+				return (1);
 			}
 		}
 		if (!x)
