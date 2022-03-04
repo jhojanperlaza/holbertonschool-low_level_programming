@@ -19,6 +19,10 @@ int main(int argc, char *argv[])
 	{
 		printf("0\n");
 	}
+	if (argc == 2)
+	{
+		printf("Error\n");
+	}
 	if (argc > 1)
 	{
 		for (n = 1; n < argc; n++)
