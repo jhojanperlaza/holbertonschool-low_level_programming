@@ -8,6 +8,8 @@ void print_times_table(int n)
 {
 	int a, b, c;
 
+	if (n <= 0)
+		_putchar('0');
 	for (b = 0; b <= n && n < 15 && n > 0; b++)
 	{
 		for (a = 0; a <= n; a++)
