@@ -16,7 +16,7 @@ char *_strcat(char *dest, char *src)
 	{
 		j++;
 	}
-	while (i < j && src[i] != '\0')
+	while (i <= j && src[i] != '\0')
 	{
 		dest[j] = src[i];
 		i++;
@@ -68,6 +68,25 @@ char *_strcpy(char *dest, char *src)
 char *str_concat(char *s1, char *s2)
 {
 	char *d, *t;
+
+	if (s1 == NULL && s2 == NULL )
+		return (NULL);
+	if(s1 == NULL && s2 != NULL)
+	{
+		t = malloc(_strlen(s2) + 1);
+		_strcpy(t, s2);
+		if (t == NULL)
+			return (NULL);
+		return(t);
+	}
+	if(s1 != NULL && s2 == NULL)
+	{
+		d = malloc((_strlen(s1)+1));
+		_strcpy(d, s1);
+		if (d == NULL)
+			return (NULL);
+		return(d);
+	}
 
 	d = malloc((_strlen(s1)) + (_strlen(s2) + 1));
 	t = malloc(_strlen(s2) + 1);
