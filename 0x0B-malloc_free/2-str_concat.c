@@ -67,34 +67,19 @@ char *_strcpy(char *dest, char *src)
 */
 char *str_concat(char *s1, char *s2)
 {
-	char *d, *t;
+	char *d;
 
-	if (s1 == NULL && s2 == NULL)
-		return (0);
-	if (s1 == NULL && s2 != NULL)
-	{
-		t = malloc(_strlen(s2) + 1);
-		_strcpy(t, s2);
-		if (t == NULL)
-			return (NULL);
-		return (t);
-	}
-	if (s1 != NULL && s2 == NULL)
-	{
-		d = malloc((_strlen(s1) + 1));
-		_strcpy(d, s1);
-		if (d == NULL)
-			return (NULL);
-		return (d);
-	}
+	if(s1 == NULL)
+		s1 = "";
+	
+	if(s2 == NULL)
+		s2 = "";
 
 	d = malloc((_strlen(s1)) + (_strlen(s2) + 1));
-	t = malloc(_strlen(s2) + 1);
-	_strcpy(d, s1);
-	_strcpy(t, s2);
-	if (d == NULL || t == NULL)
-	{
+
+	if (d == NULL)
 		return (NULL);
-	}
-	return (_strcat(d, t));
+	_strcpy(d, s1);
+
+	return (_strcat(d, s2));
 }
