@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 	if (argc != 3)
 	{
 		printf("Error\n");
-		exit (98);
+		exit(98);
 	}
 	if (_isdigit(n) || _isdigit(m))
 	{
