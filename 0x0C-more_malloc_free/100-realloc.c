@@ -1,9 +1,10 @@
 #include "main.h"
 /**
- * malloc_checked - that allocates memory using malloc
- * @b: memory block size
- *
- * Return: pointer to the allocate memory
+ * _realloc - that allocates memory using malloc
+ * @ptr: pointer to the memory previously allocated
+ * @old_size:size, in bytes, of the allocated space of ptr
+ * @new_size:new size, in bytes, of the new memory block
+ * Return: ptr
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
@@ -20,13 +21,13 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	}
 	if (new_size == 0 && ptr != NULL)
 	{
-		free (ptr);
+		free(ptr);
 		return (NULL);
 	}
 
 	reall = (char *)malloc(new_size);
 	if (reall == NULL)
 		return (NULL);
-	
+
 	return (reall);
 }
