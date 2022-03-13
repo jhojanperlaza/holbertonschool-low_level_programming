@@ -7,15 +7,14 @@
 */
 int main(void)
 {
-	int i, t1 = 0, t2 = 1, temp = 0;
+	int i, t1 = 1, t2 = 1, temp = 0;
 
 	for (i = 0; i < 50; i++)
 	{
 		temp = t1;
 		t1 = t2;
 		t2 = t2 + temp;
+		printf("%i, ", t2);
 	}
-	printf("%i\n", t2);
-
 	return (0);
 }
