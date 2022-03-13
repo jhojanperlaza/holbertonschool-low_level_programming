@@ -21,5 +21,6 @@ int main(void)
 		t1 = t2;
 		t2 = temp;
 	}
+	printf("\n");
 	return (0);
 }
