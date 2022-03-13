@@ -7,14 +7,19 @@
 */
 int main(void)
 {
-	int i, t1 = 1, t2 = 1, temp = 0;
+	long int i, t1 = 0, t2 = 1, temp;
 
 	for (i = 0; i < 50; i++)
 	{
-		temp = t1;
+		temp = t1 + t2;
+		if (i > 48)
+		{
+			printf(" %ld", temp);
+			break;
+		}
+		printf("%ld, ", temp);
 		t1 = t2;
-		t2 = t2 + temp;
-		printf("%i, ", t2);
+		t2 = temp;
 	}
 	return (0);
 }
