@@ -14,7 +14,7 @@ int main(void)
 		temp = t1 + t2;
 		if (i > 48)
 		{
-			printf(" %ld", temp);
+			printf("%ld", temp);
 			break;
 		}
 		printf("%ld, ", temp);
