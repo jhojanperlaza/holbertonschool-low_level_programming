@@ -14,7 +14,7 @@ int main(void)
 		{
 			if (temp % 2 == 0)
 			{
-				j = j+temp;
+				j = j + temp;
 			}
 			temp = t1 + t2;
 			t1 = t2;
