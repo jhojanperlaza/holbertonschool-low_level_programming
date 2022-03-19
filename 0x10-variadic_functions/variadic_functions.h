@@ -1,6 +1,7 @@
 #ifndef VARIADIC_FUNCTIONS_H
 #define VARIADIC_FUNCTIONS_H
 #include <stdio.h>
+#include <stdarg.h>
 /*
 * File: variadic_functions.h
 * Auth: Jhojan Perlaza
