@@ -12,5 +12,5 @@ main:				;tell linker entry point
 
 section .data 			;The data section is used for declaring initialized data or constants.
 
-	msg db  'Hello, Holberton',0xa ;our dear string
-	len equ 10		       ;length of our dear string
+	msg db  'Hello, world',0xa ;our dear string
+	len equ 10		       ;length of our dear string 
