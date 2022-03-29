@@ -21,13 +21,17 @@ int _strlen_recursion(const char *s)
 */
 list_t *add_node(list_t **head, const char *str)
 {
+	/* 1. declare the new node and allocate node */
 	list_t *new_node = malloc(sizeof(list_t));
 
 	if (new_node == NULL)
 		return (NULL);
+	/* 2. enter data to str and len */
 	new_node->str = strdup(str);
 	new_node->len = _strlen_recursion(str);
-	new_node->next = (*head);
-	(*head) = new_node;
+	/* 3. Make next of new node as head */
+	new_node->next = *head;
+	/* 4. move the head to point to the new node */
+	*head = new_node;
 	return (new_node);
 }
