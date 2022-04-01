@@ -12,9 +12,9 @@
  */
 typedef struct listint_s
 {
-    int n;
-    struct listint_s *next;
-}listint_t;
+	int n;
+	struct listint_s *next;
+} listint_t;
 /*
 * File: lists.h
 * Auth: Jhojan Perlaza
