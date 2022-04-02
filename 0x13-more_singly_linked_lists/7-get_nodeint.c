@@ -10,6 +10,9 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	unsigned int cont = 0;
 	listint_t *p_aux = head;
 
+	if (!head)
+		return (head);
+
 	while (p_aux != NULL)
 	{
 		p_aux = p_aux->next;
