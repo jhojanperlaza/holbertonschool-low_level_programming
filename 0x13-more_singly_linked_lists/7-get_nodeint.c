@@ -17,5 +17,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 		if (cont == index)
 			return (p_aux);
 	}
-	return (0);
+	if (cont < index)
+		return (head);
+	return (NULL);
 }
