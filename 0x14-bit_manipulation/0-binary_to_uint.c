@@ -9,7 +9,7 @@ int _strlen(const char *s)
 	int cont = 0;
 
 	if (s == NULL)
-		exit(0);
+		return (0);
 	while (*s != '\0')
 	{
 		s++;
@@ -27,6 +27,9 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int result = 0;
 	int base2 = 1;
 	int len = _strlen(b);
+
+	if (len == 0)
+		return (0);
 
 	len = len - 1;
 	while (b[len] != '\0')
