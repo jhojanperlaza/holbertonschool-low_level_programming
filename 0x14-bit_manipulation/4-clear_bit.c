@@ -7,16 +7,9 @@
 */
 int clear_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned long int num1;
-	unsigned long int num2;
-	unsigned long int num3;
-
 	if (index <= sizeof(unsigned long) * 8)
 	{
-		num1 = *n >> index;
-		num2 = *n << index;
-		num3 = num1 | num2;
-		*n = *n & num3;
+		*n = *n & ~(1 << index);
 		return (1);
 	}
 	return (-1);
