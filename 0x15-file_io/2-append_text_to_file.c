@@ -13,10 +13,10 @@ int _strlen(char *s)
 	return (1 + _strlen(s + 1));
 }
 /**
-* read_textfile - reads a text file and prints
+* append_text_to_file - appends text at the end of a file
 * @filename: text of input
-* @letters: # of letters of input
-* Return: # of letters of output
+* @text_content: string to write to the file
+* Return: 1 on success, -1 on failure
 */
 int append_text_to_file(const char *filename, char *text_content)
 {
@@ -26,14 +26,18 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (filename == NULL)
 		return (-1);
 
+	if (!text_content)
+		return (-1);
 	file_descriptor = open(filename, O_WRONLY | O_APPEND);
 	if (file_descriptor == -1)
 		return (-1);
 
-	letters_write = write(file_descriptor, text_content, _strlen(text_content));
-	if (letters_write == -1)
-		return (-1);
-
+	if (text_content)
+	{
+		letters_write = write(file_descriptor, text_content, _strlen(text_content));
+		if (letters_write == -1)
+			return (-1);
+	}
 	close(file_descriptor);
 	return (1);
 }
