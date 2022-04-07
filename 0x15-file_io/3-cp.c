@@ -5,14 +5,13 @@
 *@argv:is the of file
 * Return: always nothing
 */
-int check_typing_errors(int n, char *argv[])
+void check_typing_errors(int n, char *argv[])
 {
 	if (n == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-	return (0);
 }
 /**
 * main - program that adds positive numbers
@@ -43,7 +42,7 @@ int main(int argc, char *argv[])
 	{
 		letters_read = read(file_descriptor, buf, 1024);
 
-		check_typing_errors(file_descriptor, argv);
+		check_typing_errors(letters_read, argv);
 
 		letters_write = write(file_descriptor2, buf, letters_read);
 		if (letters_write == -1)
