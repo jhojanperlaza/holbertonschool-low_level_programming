@@ -5,13 +5,14 @@
 *@argv:is the of file
 * Return: always nothing
 */
-void check_typing_errors(int n, char *argv[])
+int check_typing_errors(int n, char *argv[])
 {
 	if (n == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
+	return (0);
 }
 /**
 * main - program that adds positive numbers
