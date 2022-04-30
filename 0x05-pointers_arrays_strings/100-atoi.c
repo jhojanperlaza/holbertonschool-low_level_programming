@@ -1,5 +1,7 @@
 #include "main.h"
 #include <stdio.h>
+#include<string.h>
+#include<stdlib.h>
 /**
  * _atoi - this function convert a string to an integer
  * @s: a string value
@@ -13,7 +15,7 @@ int _atoi(char *s)
 
 	if (!s || !*s)
 		return (0);
-	if (*s == *num)
+	if (strcmp(s, num) == 0)
 		return (-2147483648);
 
 	while (('0' > *s || *s > '9'))
