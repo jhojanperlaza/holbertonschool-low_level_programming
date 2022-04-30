@@ -8,7 +8,7 @@
  */
 int _atoi(char *s)
 {
-	long int is_negative = 1, result = 0;
+	int is_negative = 1, result = 0;
 
 	if (!s || !*s)
 		return (0);
