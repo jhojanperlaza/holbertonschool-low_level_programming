@@ -8,7 +8,7 @@
  */
 int _atoi(char *s)
 {
-	unsigned int is_negative = 1, result = 0;
+	long int is_negative = 1, result = 0;
 
 	if (!s || !*s)
 		return (0);
@@ -27,5 +27,5 @@ int _atoi(char *s)
 	{
 		result = result * 10 + (*s++ - '0');
 	}
-	return (is_negative ? -result : result);
+	return (is_negative < 0 ? -result : result);
 }
