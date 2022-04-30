@@ -9,9 +9,12 @@
 int _atoi(char *s)
 {
 	int is_negative = 1, result = 0;
+	char *num = "-2147483648";
 
 	if (!s || !*s)
 		return (0);
+	if (*s == *num)
+		return (-2147483648);
 
 	while (('0' > *s || *s > '9'))
 	{
