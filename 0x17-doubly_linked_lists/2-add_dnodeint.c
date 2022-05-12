@@ -23,6 +23,6 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 		new_node->next = p_aux;
 		p_aux->prev = new_node;
 	}
-	p_aux = NULL;
+	*head = p_aux;
 	return (new_node);
 }
