@@ -13,8 +13,7 @@ unsigned long int key_index(const unsigned char *key, unsigned long int size)
 	unsigned long int index_hash;
 
 	index_hash = hash_djb2(key);
-	while (index_hash >= size)
-		index_hash = rand() % index_hash;
-	/**index_hash = index_hash / 10; */
+	index_hash %= size;
+
 	return (index_hash);
 }
