@@ -10,6 +10,9 @@ void hash_table_print(const hash_table_t *ht)
 	unsigned long int i = 0;
 	unsigned long int last_index = 0;
 
+	if (!ht)
+		return;
+
 	while (i < ht->size)
 	{
 		if (ht->array[i] != NULL)
