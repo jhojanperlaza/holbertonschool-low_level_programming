@@ -18,7 +18,7 @@ void hash_table_print(const hash_table_t *ht)
 	}
 	if (last_index == 0)
 	{
-		printf("{ }\n");
+		printf("{}\n");
 		return;
 	}
 	i = 0;
