@@ -2,19 +2,16 @@
 #include <stdbool.h>
 
 /**
- * hash_table_print - function that prints a hash table.
+ * is_table_empty - function that prints a hash table.
  * @ht: is the hash table
+ * Return: last index of the hash table
  */
 
-void hash_table_print(const hash_table_t *ht)
+long int is_table_empty(const hash_table_t *ht)
 {
 	unsigned long int i = 0;
 	unsigned long int last_index = 0;
-	hash_node_t *p_aux;
 	bool hash_table_empty = true;
-
-	if (!ht)
-		return;
 
 	while (i < ht->size)
 	{
@@ -28,9 +25,28 @@ void hash_table_print(const hash_table_t *ht)
 	if (last_index == 0 && hash_table_empty == true)
 	{
 		printf("{}\n");
-		return;
+		return (-1);
 	}
-	i = 0;
+	return (last_index);
+}
+
+/**
+ * hash_table_print - function that prints a hash table.
+ * @ht: is the hash table
+ */
+
+void hash_table_print(const hash_table_t *ht)
+{
+	unsigned long int i = 0;
+	unsigned long int last_index = 0;
+	hash_node_t *p_aux;
+
+	if (!ht)
+		return;
+
+	last_index = is_table_empty(ht);
+	if ((long int)last_index < 0)
+		return;
 	printf("{");
 	while (i < ht->size)
 	{
