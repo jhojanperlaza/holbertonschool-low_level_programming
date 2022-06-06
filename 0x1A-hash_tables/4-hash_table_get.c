@@ -11,7 +11,6 @@
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 	unsigned long int index_hash;
-	char *p_get;
 	hash_node_t *p_aux;
 
 	if (!key)
@@ -24,10 +23,8 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	while (p_aux != NULL)
 	{
 		if (strcmp(p_aux->key, key) == 0)
-		{
-			p_get = p_aux->value;
-			return (p_get);
-		}
+			return (p_aux->value);
+
 		p_aux = p_aux->next;
 	}
 	return (NULL);
