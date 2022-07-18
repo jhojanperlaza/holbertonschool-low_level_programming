@@ -1,0 +1,7 @@
+###########################################################
+# Create first Makefile.
+###########################################################
+# name of the executable: school
+# rules: all
+all:
+	gcc main.c school.c -o school
