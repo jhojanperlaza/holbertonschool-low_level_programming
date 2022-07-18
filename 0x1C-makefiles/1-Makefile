@@ -1,0 +1,10 @@
+###########################################################
+# Create first Makefile.
+###########################################################
+# name of the executable: school
+# rules: all
+# variables:
+CC = gcc
+SRC = *.c
+all:
+	$(CC) $(SRC) -o school
