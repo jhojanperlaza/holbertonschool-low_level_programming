@@ -11,11 +11,11 @@ This algorithm works by sequentially iterating through the whole array or list f
 This type of searching algorithm is used to find the position of a specific value contained in a sorted array. The binary search algorithm works on the principle of divide and conquer and it is considered the best searching algorithm because it's faster to run.
 
 ## big O notations
-* O(1)
-* O(n)
-* O(n!)
-* n*m -> O(nm)
-* n square -> O(n^2)
-* sqrt n -> O(sqrt(n))
-* log(n) -> O(log(n))
-* n * log(n) -> O(nlog(n))
+* **O(1)**
+* **O(n)**
+* **O(n!)**
+* n*m -> **O(nm)**
+* n square -> **O(n^2)**
+* sqrt n -> **O(sqrt(n))**
+* log(n) -> **O(log(n))**
+* n * log(n) -> **O(nlog(n))**
