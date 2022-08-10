@@ -1,5 +1,8 @@
 #ifndef SEARCH_ALGOS_H
 #define SEARCH_ALGOS_H
+
+#include <stdio.h>
+#include <stdlib.h>
 /*
 * File: search_algos.h
 * Auth: Jhojan Perlaza
